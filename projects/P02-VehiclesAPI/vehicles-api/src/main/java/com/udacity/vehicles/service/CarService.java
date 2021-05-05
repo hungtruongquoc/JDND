@@ -53,7 +53,6 @@ public class CarService {
         car.setPrice(priceClient.getPrice(id));
         Location location = mapsClient.getAddress(car.getLocation());
         car.setLocation(location);
-
         return car;
     }
 
